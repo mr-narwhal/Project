@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,7 +14,10 @@ namespace Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["UserID"] != null)
+            {
+                Response.Redirect("LoginSuccess.aspx");
+            }
         }
 
         protected void RegisterRedirect_Click(object sender, EventArgs e)
