@@ -1,4 +1,4 @@
-﻿body {
+body {
 }
 
 
@@ -27,7 +27,57 @@ careersRight {
 
 defaultCenter {
     text-align: center;
+}
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    background-color: #34568B;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    min-width: 160px;
+    position: fixed;
+    z-index: 101;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    float: none;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 101;
+}
+
+.dropdown-content a:hover {
+    background-color: #505050;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-text {
+    float: inline-start;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    text-decoration: none;
 }
 
 .faqquestion {
@@ -39,7 +89,6 @@ defaultCenter {
 }
 
 .faqanswer {
-
 }
 
 .footer {
@@ -55,7 +104,7 @@ defaultCenter {
     box-shadow: 0px 0 2px 0px black
 }
 
-.footerText{
+.footerText {
     color: white;
     font-size: 16px;
     text-decoration: none;
@@ -66,6 +115,7 @@ defaultCenter {
 .footer :hover {
     background-color: #505050;
 }
+
 .leftImage {
     float: left;
 }
@@ -144,8 +194,7 @@ defaultCenter {
     color: white;
 }
 
-
-.navbar a:hover {
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #505050;
 }
 
@@ -156,6 +205,7 @@ defaultCenter {
     height: 5%;
     width: 100%;
     position: absolute;
+    overflow: hidden;
     top: 125px;
     left: 0;
     z-index: 100;
@@ -163,12 +213,12 @@ defaultCenter {
 }
 
 .navbarTextOne {
+    float: left;
     font-size: 20px;
     color: white;
     margin: 1%;
     text-decoration: none;
 }
-
 
 .over {
     background-color: white;
